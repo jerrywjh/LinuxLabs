@@ -13,9 +13,20 @@
 
 4. 在/usr中创建一个文件夹, 名字为 test.  
 > mkdir test
-> ls -l     (or ls -ld test)
+
+> ls -l 
 
 5. 在/usr/test/目录中，用vim新建一个文件 myfile, 内容为 “This is a test file"
 > vim myfile
 
-6. 
+6. 切换回computer用户
+> exit
+
+exit就是退出前面用 su -命令登录的root用户，你可以系统的提示符已经改变了
+
+7. 用computer用户的身份来编辑 /usr/test/myfile
+> vim /usr/test/myfile
+
+编辑后能正常保存么？ 为什么？
+
+8. 如果让computer用户可以编辑myfile 文件？
