@@ -23,17 +23,20 @@ ls命令查看当前目录中的文件和子目录
 查看所有文件，包括隐藏文件
 
 >ls –help 查看该命令的帮助。 
+
 如果你是第一次用Linux，请仔细阅读一些常用命令的帮助文档。根据帮助文档的内容，尝试ls的其他参数的用法
+
 用cd命令进入其他目录 ， 然后用ls命令查看不同目录的内容
 
 3. **cat命令**
 
 cat用来查看文件内容。
 
-cat /etc/crontab   显示/etc/crontab文件的内容
-cat -n /etc/passwd    显示内容和行号
-cat /bin/date   ?? 由于date文件不是文本文件，而是binary文件，因此无法用cat命令来显示。
-4. ps 命令
+>cat /etc/crontab   显示/etc/crontab文件的内容
+>cat -n /etc/passwd    显示内容和行号
+>cat /bin/date    由于date文件不是文本文件，而是binary文件，因此无法用cat命令来显示。
+
+4. **ps 命令**
 
 ps : （Process Status） 查看进程状态的命令
 
