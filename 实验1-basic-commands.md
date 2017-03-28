@@ -51,7 +51,7 @@ PID： 进程ID，这个非常重要， Linux很多操作进程的指令都是�
 VSZ：该进程使用的虚拟内存（KB）
 
 RSS： 该进程使用的固定内存量（KB）
-
+ 
 TTY：该进程运行在哪个terminal上
 
 STAT： 进程状态： S：sleep， R：running    T：stop   。。。
