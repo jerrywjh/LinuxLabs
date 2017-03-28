@@ -8,7 +8,7 @@
 ### （一）
  1. 使用 vim 新建一个名为 vmware.txt 的空文件，录入下面文字，并保存。
  
-```VMware Workstation User's Manual is available from the Help menu. The VMware Guest Operating System Installation Guide is available from the Help menu and provides information about installing specific guest operating systems in your virtual machines. The latest product documentation, including the latest versions of the user's manual and guest installation. ```
+> VMware Workstation User's Manual is available from the Help menu. The VMware Guest Operating System Installation Guide is available from the Help menu and provides information about installing specific guest operating systems in your virtual machines. The latest product documentation, including the latest versions of the user's manual and guest installation. 
 
 2. 将 Workstation 的 W 改为小写字母。 
 
