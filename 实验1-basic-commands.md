@@ -51,30 +51,21 @@ ps : （Process Status） 查看进程状态的命令
 在显示的结果中，各个字段的意义如下：
 
 -USER： 该进程属于哪个用户
-
 -PID： 进程ID，这个非常重要， Linux很多操作进程的指令都是根据PID来操作的
-
 -%CPU： 该进程占用的CPU资源百分比
-
 -%MEM： 该进程占用的内存资源百分比
-
 -VSZ：该进程使用的虚拟内存（KB）
-
 -RSS： 该进程使用的固定内存量（KB）
- 
 -TTY：该进程运行在哪个terminal上
-
 -STAT： 进程状态： S：sleep， R：running    T：stop   。。。
-
 -START：该进程启动的时间
-
 -TIME：该进程使用的CPU的运行时间
-
 -COMMAND： 该进程对应的命令
 
-ps -l  查看你自己bash相关的进程
-ps axjf  查看进程之间的树状关系
-5. man命令
+>ps -l  查看你自己bash相关的进程
+>ps axjf  查看进程之间的树状关系, 这个命令也很常用
+
+5. **man命令**
 
 man: （manual） 查看命令的详细帮助
 
