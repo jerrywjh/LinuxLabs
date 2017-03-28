@@ -10,5 +10,11 @@
 > su -
 
 思考: ```su -``` 和 ```su``` 有何不同？
-4. 在/usr中创建一个文件夹, 名字为 test
+
+4. 在/usr中创建一个文件夹, 名字为 test.  
 > mkdir test
+
+5. 在/usr/test/目录中，用vim新建一个文件 myfile, 内容为 “This is a test file"
+> vim myfile
+
+6. 
