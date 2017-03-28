@@ -1,5 +1,6 @@
 # LinuxLabs
 A serial of labs for Linux beginners
+NOTE: These docs are written in Chinese. 
 
 ## 实验环境：
 #### 虚拟机软件： VMWare
