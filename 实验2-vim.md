@@ -7,11 +7,11 @@
 1. 在当前用户默认工作目录下新建一个名为“test”的目录。 
 2. 将文件“/etc/rsyslog.conf”复制到“test”目录下。 
 3. 使用vim 打开“test ”目录下的rsyslog.conf。
-4. 指出设定umask（类似于“umask 0022”）的所在行号。 
+4. 指出$WorkDirectory /var/... 的所在行号。 
 5. 将光标移到该行，并复制该行内容。 
 6. 将该行内容内容粘贴至最后一行。 
 7. 撤销第6步的动作。
-8. 光标移到“$ FileOwner syslog”，删除该行。 
+8. 光标移到第31行，删除该行。 
 9. 存盘但不退出。
 10. 将光标移到首行，插入模式下输入“Hello,this is vi world!”。 
 11. 向下查找字符串“syslog”。 
