@@ -29,4 +29,4 @@ exit就是退出前面用 su -命令登录的root用户，你可以系统的提�
 
 编辑后能正常保存么？ 为什么？
 
-8. 如果让computer用户可以编辑myfile 文件？
+8. 如何让computer用户可以编辑myfile 文件？
