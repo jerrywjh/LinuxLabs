@@ -51,15 +51,25 @@ ps : （Process Status） 查看进程状态的命令
 在显示的结果中，各个字段的意义如下：
 
 -USER： 该进程属于哪个用户
+
 -PID： 进程ID，这个非常重要， Linux很多操作进程的指令都是根据PID来操作的
+
 -%CPU： 该进程占用的CPU资源百分比
+
 -%MEM： 该进程占用的内存资源百分比
+
 -VSZ：该进程使用的虚拟内存（KB）
+
 -RSS： 该进程使用的固定内存量（KB）
+
 -TTY：该进程运行在哪个terminal上
+
 -STAT： 进程状态： S：sleep， R：running    T：stop   。。。
+
 -START：该进程启动的时间
+
 -TIME：该进程使用的CPU的运行时间
+
 -COMMAND： 该进程对应的命令
 
 >ps -l  查看你自己bash相关的进程
@@ -68,42 +78,48 @@ ps : （Process Status） 查看进程状态的命令
 5. **man命令**
 
 man: （manual） 查看命令的详细帮助
+>man cat
 
-man cat
 在man的文档中，可以 上下左右 （或者hjkl键）和翻页等进行翻页 。如果要退出这个页面，按q键。
-
 用man来查看你知道的几个命令的帮助文档。  强烈建议：至少仔细完整的阅读完2，3个命令的man page
-6. info 命令
+
+6. **info 命令**
 
 info作用和man基本是一样的，是GNU推荐的文档格式，加上了Hyperlink等格式。
 
-info man
-info cat
-info ls
-7. cp命令
+>info man
+>info cat
+>info ls
+
+7. **cp命令**
 
 cp: （copy） 文件复制命令
 
-cp ~/.bashrc  /tmp/bashrc
+>cp ~/.bashrc  /tmp/bashrc
+
 说明：~代表用户的主目录， 用户login以后就处于这个目录下。缺省情况下，该用户对于该目录具有所有操作的权限。 比如：root用户的主目录就是 /root ， 而computer用户的主目录就是/home/computer.
 
-cp -r  /usr/include/net     ~/
+>cp -r  /usr/include/net     ~/
+
 把/usr/include/net这个目录整体copy 到当前用户的主目录下
 
 -r : Recursive 递归
 
-cp -p ~/.bashrc  /tmp/bashrc2  把文件连同属性一起copy
+>cp -p ~/.bashrc  /tmp/bashrc2  把文件连同属性一起copy
+
 说明：普通的cp命令会改变文件的属性 （所有者，权限等都会变成给操作者相关的） 有的时候（比如备份时），我们需要保持文件的原生属性，这时候就要用p参数
 
 你可以看一下 /tmp/bashrc 和/tmp/bashrc2有何不同
 
-8. rm命令
+8. **rm命令**
 
 rm: (Remove)删除文件
 
-rm /tmp/bashrc
-mkdir /tmp/testdir      然后  rm -r /tmp/testdir
+>rm /tmp/bashrc
+
+>mkdir /tmp/testdir      然后  rm -r /tmp/testdir
+
 需要注意的是： rm是直接删除，没有垃圾箱的概念。非常危险，用的时候要格外小心。
 
-说明：以上这些命令都是Linux中最常用的命令，务必需要掌握。各种命令中的参数，不需要全部记住，用到的时候通过查看帮助来选择正确的参数。
+**说明**：以上这些命令都是Linux中最常用的命令，务必需要掌握。各种命令中的参数，不需要全部记住，用到的时候通过查看帮助来选择正确的参数。
 
