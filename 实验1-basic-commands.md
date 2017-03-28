@@ -33,14 +33,14 @@ ls命令查看当前目录中的文件和子目录
 
 cat用来查看文件内容。
 
-显示/etc/crontab文件的内容 
->cat /etc/crontab
+ 
+>**cat /etc/crontab**   显示/etc/crontab文件的内容
 
-显示内容和行号
->cat -n /etc/passwd 
+>**cat -n /etc/passwd**  显示内容和行号
+
+>**cat /bin/date**
 
 查看非文本文件。由于date文件不是文本文件，而是binary文件，因此无法用cat命令来显示。
->cat /bin/date
 
 4. **ps 命令**
 
@@ -54,20 +54,13 @@ ps : （Process Status） 查看进程状态的命令
 - PID： 进程ID，这个非常重要， Linux很多操作进程的指令都是根据PID来操作的
 - %CPU： 该进程占用的CPU资源百分比
 - %MEM： 该进程占用的内存资源百分比
-
--VSZ：该进程使用的虚拟内存（KB）
-
--RSS： 该进程使用的固定内存量（KB）
-
--TTY：该进程运行在哪个terminal上
-
--STAT： 进程状态： S：sleep， R：running    T：stop   。。。
-
--START：该进程启动的时间
-
--TIME：该进程使用的CPU的运行时间
-
--COMMAND： 该进程对应的命令
+- VSZ：该进程使用的虚拟内存（KB）
+- RSS： 该进程使用的固定内存量（KB）
+- TTY：该进程运行在哪个terminal上
+- STAT： 进程状态： S：sleep， R：running    T：stop   。。。
+- START：该进程启动的时间
+- TIME：该进程使用的CPU的运行时间
+- COMMAND： 该进程对应的命令
 
 >ps -l  查看你自己bash相关的进程
 >ps axjf  查看进程之间的树状关系, 这个命令也很常用
