@@ -35,10 +35,10 @@ cat用来查看文件内容。
 >cat /etc/crontab   
 显示/etc/crontab文件的内容  
 
->cat -n /etc/passwd    
+>cat -n /etc/passwd      
 显示内容和行号 
 
->cat /bin/date    
+>cat /bin/date  
 由于date文件不是文本文件，而是binary文件，因此无法用cat命令来显示。  
 
 4. **ps 命令**
