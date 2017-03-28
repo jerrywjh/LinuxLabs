@@ -4,6 +4,7 @@
 2. 了解文本编辑器的三种模式。
 3. 掌握使用vi编辑器进行编辑、选择及操作文本文件的命令
 ## 实验内容
+### （一） 
 1. 在当前用户默认工作目录下新建一个名为“test”的目录。 
 2. 将文件“/etc/rsyslog.conf”复制到“test”目录下。 
 3. 使用vim 打开“test ”目录下的rsyslog.conf。
@@ -17,5 +18,21 @@
 11. 向下查找字符串“syslog”。 
 12. 再向上查找字符串“TCP”。 
 13. 强制退出vi，不存盘。
+
+### （二）
+ 1. 使用 vim 新建一个名为 vmware.txt 的空文件，录入下面文字，并保存。
+```VMware Workstation User's Manual is available from the Help menu. The VMware Guest Operating System Installation Guide is available from the Help menu and provides information about installing specific guest operating systems in your virtual machines. The latest product documentation, including the latest versions of the user's manual and guest installation. ```
+2. 将 Workstation 的 W 改为小写字母。 
+（1） 、光标定位到 w 上。 （2） 、确认处于命令模式。按 x(小写)删除 W，然后按 i 键，切换到编辑状态输 入 w。 
+
+3. 将第一行文字删除。 将光标定位到第一行，然后用 dd 命令就可删除。 
+4. 插入一行 
+将光标定位到第二自然段的最后，输入小写字母 o,在光标位置下面插入一行。 
+
+5. 查找字符 menu 
+按esc 切换到命令模式, 输入/menu 然后按回车，光标定位到 menu 字 符上，按字母 n 键，找到下一个。 
+
+6. 存盘退出
+
 ## VIM 操作
 参阅鸟哥LINUX的第10章
