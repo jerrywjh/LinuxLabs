@@ -63,6 +63,7 @@ ps : （Process Status） 查看进程状态的命令
 - COMMAND： 该进程对应的命令
 
 >ps -l  查看你自己bash相关的进程
+
 >ps axjf  查看进程之间的树状关系, 这个命令也很常用
 
 5. **man命令**
@@ -78,7 +79,9 @@ man: （manual） 查看命令的详细帮助
 info作用和man基本是一样的，是GNU推荐的文档格式，加上了Hyperlink等格式。
 
 >info man
+
 >info cat
+
 >info ls
 
 7. **cp命令**
