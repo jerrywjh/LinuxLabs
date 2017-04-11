@@ -79,10 +79,21 @@
 > ls -l  ~/
 
 12. 把压缩打包的文件解压缩到一个特定的目录
+> cp ~/etc_backup.tar.gz ~/tmp
 
-> tar -xzvf  ~/etc_backup.tar.gz  ~/tmp
+> cd ~/tmp
+
+> tar -xzvf  ~/etc_backup.tar.gz  
+
+> cp ~/etc_backup.tar.bz2  ~/anotherdir
+
+> cd ~/anotherdir
 
 > tar -xjvf  ~/etc_backup.tar.bz2  ~/anotherdir
+
+> cp ~/etc_backup.tar  ~/thirddir
+
+> cd ~/thirddir
 
 > tar -xvf  ~/etc_backup.tar  ~/thirddir
 
