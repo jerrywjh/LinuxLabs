@@ -89,13 +89,13 @@
 
 > cd ~/anotherdir
 
-> tar -xjvf  ~/etc_backup.tar.bz2  ~/anotherdir
+> tar -xjvf  ~/etc_backup.tar.bz2
 
 > cp ~/etc_backup.tar  ~/thirddir
 
 > cd ~/thirddir
 
-> tar -xvf  ~/etc_backup.tar  ~/thirddir
+> tar -xvf  ~/etc_backup.tar
 
 
 
