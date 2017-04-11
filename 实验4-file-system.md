@@ -48,7 +48,7 @@
 
 8. 对于一个没有安装GUI环境的Linux机器， 如果访问U盘？
  
-   * 创建一个目录   mkdir /medie/udrive
+   * 创建一个目录   mkdir /media/udrive
    
    * 找到U盘对应的设备名, 在拔下和插入U盘的情况下，分别运行：
 
