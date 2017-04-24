@@ -68,7 +68,7 @@ Nginx是目前最广泛使用的web服务器， 具体介绍请参考：https://
 
 > yum install zlib-devel
 
-> ....
+> yum install ... (其他缺失的库）
 
 
 
