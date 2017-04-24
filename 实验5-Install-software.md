@@ -16,6 +16,7 @@ Redis是目前广泛应用的key-value的数据存储服务，具体介绍请参
 > tar xvzf redis-stable.tar.gz
 3. 编译
 > cd redis-stable
+
 > make
 4. 安装 
 > sudo make install 
@@ -34,10 +35,17 @@ Nginx是目前最广泛使用的web服务器， 具体介绍请参考：https://
 
 2. 创建一个名字为nginx的用户 (nologin shell),  nginx服务将会使用这个用户作为owner
 > useradd nginx
+
 > usermod -s /sbin/nologin nginx
 
 可以在 /etc/passwd中查看该用户是否正常添加了
 3. 源文件解压缩
 > tar xzvf nginx-1.11.13.tar.gz
+
 > cd nginx-1.11.13 
+4. 编译
+> ./configure --user=nginx --group=nginx --sbin-path=/usr/sbin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log
+
+关于各个参数的意义，可以参考 ./configure --help 命令
+编译的时候，会检查相关的类库是否已经安装，一般情况下，都会出现 error，报告某个库不存在。 因为不同的OS版本，不同的使用者，安装的类库都不同，因此每个人可能的错误信息都不同。
 
