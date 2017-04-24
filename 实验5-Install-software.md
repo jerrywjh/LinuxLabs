@@ -57,12 +57,17 @@ Nginx是目前最广泛使用的web服务器， 具体介绍请参考：https://
 另一个方法是直接用yum安装： yum install pcre-devel 
 
 关于yum的使用，请参照本实验后面的部分。 
+
 如果 yum 找不到pcre-devel库或其他相关的库，需要先为yum 增加 EPEL的repository。
 
 > wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm
+
 > rpm -ivh epel-release-7-9.noarch.rpm
+
 > yum install pcre-devel
+
 > yum install zlib-devel
+
 > ....
 
 
