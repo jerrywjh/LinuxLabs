@@ -19,4 +19,6 @@ Redis是目前广泛应用的key-value的数据存储服务，具体介绍请参
 注意：make install 需要root权限。 
 执行完 make install命令后，  在 /usr/local/bin/目录中会找到redis-server 和 redis-cli这两个文件。 其中redis-server是redis的服务程序， redis-cli是redis的命令行界面。
 
+redis这个源码安装是最简单的一种，大部分情况下都没有这么简单。很多情况下都可能无法编译通过，需要先安装各种库。
+
 
