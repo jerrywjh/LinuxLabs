@@ -8,4 +8,7 @@
 Redis是目前广泛应用的key-value的数据存储服务，具体介绍请参考 https://redis.io
 1. 下载redis源程序
 > wget http://download.redis.io/redis-stable.tar.gz
+2. 解压缩
+> tar xvzf redis-stable.tar.gz
+3. 
 
