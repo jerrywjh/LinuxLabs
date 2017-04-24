@@ -29,6 +29,7 @@ redis这个源码安装是最简单的一种，大部分情况下都没有这么
 Nginx是目前最广泛使用的web服务器， 具体介绍请参考：https://nginx.org/en/
 1. 下载 nginx源程序
 > wget http://nginx.org/download/nginx-1.11.13.tar.gz    
+
 注意：后面的版本号1.11.13是截止到2017-04-24的最新版本，你可以到nginx官网查找最新版本的下载链接
 2. 
 
