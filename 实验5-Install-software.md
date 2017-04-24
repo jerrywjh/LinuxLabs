@@ -47,10 +47,20 @@ Nginx是目前最广泛使用的web服务器， 具体介绍请参考：https://
 > ./configure --user=nginx --group=nginx --sbin-path=/usr/sbin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log
 
 关于各个参数的意义，可以参考 ./configure --help 命令
+
 编译的时候，会检查相关的类库是否已经安装，一般情况下，都会出现 error，报告某个库不存在。 因为不同的OS版本，不同的使用者，安装的类库都不同，因此每个人可能的错误信息都不同。
+
 这里以 PCRE类库缺省为例，你需要安装 pcre-devel 这个包。  （ devel的后缀说明是开发用的库，源码编译的时候，往往需要的不是pcre,而是pcre-devel )
-如何安装这个包呢？ 
-一个方法是找到这包的源文件，编译， 安装。。。  
+
+如何安装这个包呢？ 一个方法是找到这包的源文件，下载，编译， 安装。。。  
+
 另一个方法是直接用yum安装： yum install pcre-devel 
-关于yum的使用，请参照
-后面的
+
+关于yum的使用，请参照本实验后面的部分。
+
+
+
+
+
+
+
