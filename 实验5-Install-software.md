@@ -43,7 +43,7 @@ Nginx是目前最广泛使用的web服务器， 具体介绍请参考：https://
 > tar xzvf nginx-1.11.13.tar.gz
 
 > cd nginx-1.11.13 
-4. 编译
+4. 生产Makefile
 > ./configure --user=nginx --group=nginx --sbin-path=/usr/sbin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log
 
 关于各个参数的意义，可以参考 ./configure --help 命令
@@ -69,6 +69,16 @@ Nginx是目前最广泛使用的web服务器， 具体介绍请参考：https://
 > yum install zlib-devel
 
 > yum install ... (其他缺失的库）
+5. 编译， 安装
+> make 
+
+> make install
+
+6. 运行
+> /usr/sbin/nginx -c /etc/nginx/nginx.conf
+
+你可以用 ps aux 命令来查看 nginx是否已经运行了
+
 
 
 
