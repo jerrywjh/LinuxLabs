@@ -31,5 +31,13 @@ Nginx是目前最广泛使用的web服务器， 具体介绍请参考：https://
 > wget http://nginx.org/download/nginx-1.11.13.tar.gz    
 
 注意：后面的版本号1.11.13是截止到2017-04-24的最新版本，你可以到nginx官网查找最新版本的下载链接
-2. 
+
+2. 创建一个名字为nginx的用户 (nologin shell),  nginx服务将会使用这个用户作为owner
+> useradd nginx
+> usermod -s /sbin/nologin nginx
+
+可以在 /etc/passwd中查看该用户是否正常添加了
+3. 源文件解压缩
+> tar xzvf nginx-1.11.13.tar.gz
+> cd nginx-1.11.13 
 
