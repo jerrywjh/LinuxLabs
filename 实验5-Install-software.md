@@ -60,9 +60,15 @@ Nginx是目前最广泛使用的web服务器， 具体介绍请参考：https://
 
 如果 yum 找不到pcre-devel库或其他相关的库，需要先为yum 增加 EPEL的repository。
 
-> wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm     （注意：不通版本的OS链接并不一样，从官网查找合适的安装包）
+> wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm 
 
-> rpm -ivh epel-release-7-9.noarch.rpm
+> wget http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+
+> wget http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+ 
+ （注意：不通版本的OS链接并不一样，从官网查找合适的安装包, 上面3个包分别是 CentOS 7, CentOS 6 32bit, CentOS 6 64bit对应的package ）
+ 
+> rpm -ivh epel-release-x-x.noarch.rpm
 
 > yum install pcre-devel
 
@@ -85,18 +91,42 @@ Nginx是目前最广泛使用的web服务器， 具体介绍请参考：https://
 
 -q: query  -a:all
 
+2. 我们前面刚刚已经用过 rpm -ivh 安装过 EPEL的 repository, 你可以回顾一下
+
 2. 查看是否安装了apache服务器
 > rpm -qi httpd
 
 3. 安装apache服务
+
 下载安装包
 > wget http://mirror.centos.org/centos/6/os/x86_64/Packages/httpd-2.2.15-59.el6.centos.x86_64.rpm
 
 用rpm命令安装
 > rpm -ivh httpd-2.2.15-59.el6.centos.x86_64.rpm
 
+这个安装能否成功？ 很多情况下可能会报错，因为依赖的库不存在。这种情况下，需要先安装依赖库。 
+如果无法通过这种方式安装成功，可以用后面的yum方式。
+
 查询是否安装成功
 > rpm -qi httpd
+
+### 用YUM安装软件
+前面提到的 源码编译和 rpm -ivh 的安装方式，最大的问题就是软件依赖。 很多情况下，安装一个软件的时候会提示缺少这个那个库， 当你去安装依赖的库时，有时又会提示你这个库还缺少的其他依赖。 YUM comes to resure!
+
+1. 用yum 安装 apache服务
+> yum install httpd
+
+如果检查到httpd需要其他前置依赖，yum会自动先安装这些依赖。因此用yum安装非常省心。
+
+2. 检查 apache的安装情况
+> yum info httpd
+
+3. 升级 apache
+> yum update httpd
+
+4. 卸载 apache
+> yum remove httpd
+
 
 
 
