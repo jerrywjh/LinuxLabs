@@ -60,7 +60,7 @@ Nginx是目前最广泛使用的web服务器， 具体介绍请参考：https://
 
 如果 yum 找不到pcre-devel库或其他相关的库，需要先为yum 增加 EPEL的repository。
 
-> wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm
+> wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm     （注意：不通版本的OS链接并不一样，从官网查找合适的安装包）
 
 > rpm -ivh epel-release-7-9.noarch.rpm
 
@@ -80,8 +80,23 @@ Nginx是目前最广泛使用的web服务器， 具体介绍请参考：https://
 你可以用 ps aux 命令来查看 nginx是否已经运行了
 
 ### RPM 软件安装
+1. 查看目前安装的软件
+> rpm -qa   
 
+-q: query  -a:all
 
+2. 查看是否安装了apache服务器
+> rpm -qi httpd
+
+3. 安装apache服务
+下载安装包
+> wget http://mirror.centos.org/centos/6/os/x86_64/Packages/httpd-2.2.15-59.el6.centos.x86_64.rpm
+
+用rpm命令安装
+> rpm -ivh httpd-2.2.15-59.el6.centos.x86_64.rpm
+
+查询是否安装成功
+> rpm -qi httpd
 
 
 
