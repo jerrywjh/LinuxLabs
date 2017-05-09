@@ -32,6 +32,9 @@ USER： 当前用户
 如果要查询某个具体的变量的值，比如PS1的值：
 > set | grep PS1
 
+当然也可以用： 
+> echo $PS1
+
 3. 查看目前系统使用的alias
 > alias
 
