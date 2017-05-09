@@ -7,14 +7,25 @@
 1. 查看系统的环境变量
 > env
 
-这个命令会显示系统所有的 environment variables. 比如
+这个命令会显示系统所有的 environment variables. 比如:
+
 PATH： 路径的环境变量
+
 HOSTNAME： 主机名的环境变量
+
 USER： 当前用户
+
 。。。。
 
 要查看一个具体的变量的值，比如PATH
 > echo $PATH
+
+2. 查看所有变量，包括环境变量和自定义变量
+> set
+
+> set | less      (分页显示)
+
+这个set命令会显示目前系统中所有变量，包括env命令显示的环境变量，加上Bash的各个初始化脚本声明的各种自定义变量和函数
 
 
 
