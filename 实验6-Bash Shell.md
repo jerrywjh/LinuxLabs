@@ -27,29 +27,29 @@ USER： 当前用户
 
 这个set命令会显示目前系统中所有变量，包括env命令显示的环境变量，加上Bash的各个初始化脚本声明的各种自定义变量和函数
 
+如果要查询某个具体的变量的值，比如PS1的值：
+> set | grep PS1
 
-
-
-1. 查看目前系统使用的alias
+3. 查看目前系统使用的alias
 > alias
 
 很多linux的版本中都有 alias ll='ls -l --color=auto' 这样的alias， 在这种情况下，输入ll就 相当于输入 ls -l --color=auto
 
-2. 设置一个alias并测试
+4. 设置一个alias并测试
 > cls
 
 > alias cls='clear'
 
 > cls
 
-3. 取消刚才的alias设置
+5. 取消刚才的alias设置
 > cls
 
 > unalias cls
 
 > cls
 
-4. 使用PS1修改 Bash的提示符
+5. 使用PS1修改 Bash的提示符
 
 3. 数据流重定向
 
