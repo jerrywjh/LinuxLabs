@@ -85,6 +85,11 @@ USER： 当前用户
 
 两者为什么不一致？ 什么关系？
 
-每次你退出bash的时候，命令的history会被写入.bash_history文件， 
+每次你退出bash的时候，命令的history会被写入.bash_history文件， .bash_history实际上保存的是你上次的操作记录。
+
+8. 查看bash的各种初始化文件, 包括
+/etc/profile  /etc/profile.d/*.sh  （两者的关系？）
+
+
 
 
