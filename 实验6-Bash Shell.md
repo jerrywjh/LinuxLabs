@@ -6,17 +6,24 @@
 ## 实验内容
 1. 查看目前系统使用的alias
 > alias
+
 很多linux的版本中都有 alias ll='ls -l --color=auto' 这样的alias， 在这种情况下，输入ll就 相当于输入 ls -l --color=auto
 
 2. 设置一个alias并测试
 > cls
+
 > alias cls='clear'
+
 > cls
 
 3. 取消刚才的alias设置
 > cls
+
 > unalias cls
+
 > cls
+
+
 
 
 
