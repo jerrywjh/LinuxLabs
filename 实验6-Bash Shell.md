@@ -87,8 +87,17 @@ USER： 当前用户
 
 每次你退出bash的时候，命令的history会被写入.bash_history文件， .bash_history实际上保存的是你上次的操作记录。
 
-8. 查看bash的各种初始化文件, 包括
-/etc/profile  /etc/profile.d/*.sh  （两者的关系？）
+8. 查看bash的各种初始化文件, 包括:
+
+/etc/profile  
+
+/etc/profile.d/*.sh  （和/etc/profile的关系？阅读一下/etc/profile的代码）
+
+~/.bash_profile
+
+~/.bashrc
+
+大家可以仔细阅读一下这几个文件的代码，了解一下他们都做了什么，他们之间的关系。
 
 
 
