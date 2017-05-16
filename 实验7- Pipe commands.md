@@ -161,7 +161,36 @@ touch 当前目录的所有文件
 问题：为什么 grep, sort, tr, cut等可以直接 用 | 连接在某个命令后，比如  ls | sort, 而不能用 ls |touch , 必须用 ls | xargs touch ?
 可以通过Google／stackexchange等来搜索这个问题的解答。
 
-9. 
+9. sed
+
+Stream editor for filtering and transorming text
+
+把 /etc/passwd中的内容显示出来，但删除2-5行
+> nl /etc/passwd | sed '2,5d'
+
+nl: 具体用法请 man nl
+
+sed 命令格式：  [n1], [n2] 操作， 比如 2,5d 就是删除第2到第5行
+a: 新增
+d: 删除
+s: 替换  和vim中的s用法一样
+
+> last | sed s/Sun/Sunday/g 
+
+这句话作用是什么？ 运行看一下.
+
+sed的替换语法和 vim 的完全一样 s/原始字符串/替换的字符串/g ， g表示全部替换，支持正则表达式
+
+
+sed非常适合用来修改文件， 比如把某个文件中的某个字符串替换成另外一个，这时候用 -i 参数
+
+> sed -i s/a[a|b]c/ddd/g  abc.txt
+
+把abc.txt中 aac 和 abc的字符串都替换成ddd
+
+
+
+
 
 
 
