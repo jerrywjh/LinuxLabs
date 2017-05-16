@@ -60,11 +60,16 @@ grep的主要参数：
 
 -k  --key: 排序的键的位置
 
+对 /etc/passwd 中的数据按照用户名的升序排列
+> cat /etc/passwd | sort
+
+or
+> sort /etc/passwd
+
 对 /etc/passwd 中的数据按照 uId的升序排列
 > cat /etc/passwd | sort -n -t ':' -k 3
 
-说明： -k 3 ： 按照第三列来排序，第三列是uId
-
+说明： -k 3 ： 按照第三列来排序，第三列是uId 
 
 
 
