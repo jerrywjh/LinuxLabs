@@ -84,6 +84,18 @@ print newline, word and byte counts for each file
 
 -m --chars 仅显示字符数
 
+查看系统日志的统计信息，包括有多少行，多少字，多少字符
+
+> wc /var/log/messages 
+
+or 
+
+> cat /var/log/messages | wc
+
+查看系统日志有多少行
+> wc -l /var/log/messages
+
+5. 
 
 
 
