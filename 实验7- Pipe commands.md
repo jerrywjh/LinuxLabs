@@ -157,7 +157,8 @@ touch 当前目录的所有文件
 该命令执行完后，用 ls -l 查看一下文件的 timestamp, 是不是所有文件都修改了?
 
 注意： xargs touch 想到于 touch (ls的结果）, 也就是说 ls的output 现在变成了 touch的input。
-为什么 grep, sort, tr, cut等可以直接 用 | 连接在某个命令后，比如  ls | sort, 而不能用 ls |touch , 必须用 ls | xargs touch ?
+
+问题：为什么 grep, sort, tr, cut等可以直接 用 | 连接在某个命令后，比如  ls | sort, 而不能用 ls |touch , 必须用 ls | xargs touch ?
 可以通过Google／stackexchange等来搜索这个问题的解答。
 
 9. 
