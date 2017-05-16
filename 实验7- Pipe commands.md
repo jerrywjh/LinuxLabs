@@ -4,6 +4,7 @@
 ## 实验内容
 
 1. cut 
+
 Print selected parts of lines form a file to standard output.
 
 cut的几个主要参数：
@@ -26,6 +27,7 @@ cut的几个主要参数：
 -c 12- ：从第12个字符往后的所有字符
 
 2. grep
+
 grep是个搜索类的命令，是linux中最常用的命令之一，支持正则表达式的搜索
 
 grep的主要参数：
@@ -76,6 +78,7 @@ or
 说明： -k 3 ： 按照第三列来排序，第三列是uId 
 
 4. wc 
+
 print newline, word and byte counts for each file
 
 参数：
@@ -98,6 +101,7 @@ or
 > wc -l /var/log/messages
 
 5. uniq 
+
 remove duplicate lines from a sortd file
 
 参数：
