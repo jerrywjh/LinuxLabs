@@ -40,7 +40,7 @@ grep的主要参数：
 查找/etc/passwd中 root用户的那一行
 > cat /etc/passwd | grep ^root  
 
-注意：^root 是正则表达式，表示 以root开头的那一行
+注意：^root 是正则表达式，表示 以root头的那一行
 
 显示当前目录的所有子目录
 > ls -l | grep ^d 
@@ -95,7 +95,19 @@ or
 查看系统日志有多少行
 > wc -l /var/log/messages
 
-5. 
+5. uniq 
+remove duplicate lines from a sortd file
+
+参数：
+-i --ignore-case: 忽略大小写
+
+-c --count: 显示重复了多少次
+
+查看你使用Bash命令的历史，并统计每个命令的使用次数
+> history | cut -c 7- | sort | uniq -c
+
+具体命令如果不明白，用 man 来查看帮助
+
 
 
 
