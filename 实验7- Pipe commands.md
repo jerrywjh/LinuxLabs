@@ -6,7 +6,7 @@
 1. cut 
 cut的几个主要参数：
 
--d  --delimiter: 分隔符
+-d  --delimiter 分隔符
 
 -f  --fields  字段／列
 
@@ -28,4 +28,14 @@ grep是个搜索类的命令，是linux中最常用的命令之一，支持正�
 
 grep的主要参数：
 
--i 
+-i  --ignore-case  忽略大小写
+-n  --line_number  显示行号
+-r  --recursive   递归搜索，可以搜索子目录
+
+查看/lib目录下，所有python文件中包含 "random"这个字符的代码行
+> grep --include=*.py -nr random /lib
+
+查找/etc/passwd中 root用户的那一行
+> cat /etc/passwd | grep ^root  
+
+注意：^root 是正则表达式，表示 以root开头的那一行
