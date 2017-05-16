@@ -4,11 +4,21 @@
 ## 实验内容
 
 1. cut 
+cut的几个主要参数：
+-d  --delimiter: 分隔符
+-f  --fields  字段／列
+-c  --characters  字符
+
 列出系统中所有的用户名
-> cut -d':' -f1 /etc/passwd
+> cut -d ':' -f 1 /etc/passwd
 
 当然也可以用：
-> cat /etc/passwd | cut -d':' -f1
+> cat /etc/passwd | cut -d ':' -f 1
+
+列出所有的环境变量及其值
+> export | cut -c 12-
+
+-c 12- ：从第12个字符往后的所有字符
 
 
 
