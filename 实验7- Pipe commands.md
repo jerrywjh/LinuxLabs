@@ -124,6 +124,38 @@ Copy standard input to a file, and also to standard output
 显示当前目录的详细信息，并保存到aaa这个文件中
 > ls -l | tee aaa
 
+7. tr
+
+Translate, squeeze, and/or delete characters from standard input, writing to standard output.
+
+参数：
+
+-d --delete : 删除字符
+
+查看用户登录的信息，并把所有字母用大写显示
+> last | tr [a-z] [A-Z]
+
+or 
+
+> last | tr [:lower:] [:upper:]
+
+注意： 上面的两个命令都用到了正则表达式，如果对正则表达式不明白或遗忘了，重新查看相关的文档 
+
+把Windows下的文本文件中的换行符 \n\r 转换成linux的换行符 \n 
+> cat abc.txt | tr -d '\r' > abc.linux.txt
+
+8. xargs
+
+Run COMMAND with arguments read from input
+
+
+
+
+
+
+
+
+
 
 
 
