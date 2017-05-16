@@ -39,3 +39,13 @@ grep的主要参数：
 > cat /etc/passwd | grep ^root  
 
 注意：^root 是正则表达式，表示 以root开头的那一行
+
+显示当前目录的所有子目录
+> ls -l | grep ^d 
+
+显示当前目录的所有文件，不显示子目录
+> ls -l | grep -v ^d
+
+-v 参数： 请查看帮助了解
+
+
