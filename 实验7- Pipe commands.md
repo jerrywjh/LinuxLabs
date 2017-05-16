@@ -4,6 +4,8 @@
 ## 实验内容
 
 1. cut 
+Print selected parts of lines form a file to standard output.
+
 cut的几个主要参数：
 
 -d  --delimiter 分隔符
@@ -107,6 +109,17 @@ remove duplicate lines from a sortd file
 > history | cut -c 7- | sort | uniq -c
 
 具体命令如果不明白，用 man 来查看帮助
+
+6. tee
+
+Copy standard input to a file, and also to standard output
+
+参数： 
+-a  --append: 追加到文件中，而不是覆盖
+
+显示当前目录的详细信息，并保存到aaa这个文件中
+> ls -l | tee aaa
+
 
 
 
