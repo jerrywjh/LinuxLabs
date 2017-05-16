@@ -71,6 +71,14 @@ or
 
 说明： -k 3 ： 按照第三列来排序，第三列是uId 
 
+4. wc 
+print newline, word and byte counts for each file
+
+参数：
+-l --lines  仅显示行数
+-w --words 仅显示单词数
+-m --chars 仅显示字符数
+
 
 
 
