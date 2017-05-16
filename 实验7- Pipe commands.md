@@ -48,4 +48,9 @@ grep的主要参数：
 
 -v 参数： 请查看帮助了解
 
+3. sort
+参数：
+-n  --numeric-sort : 按照纯数字的方式来排序
+-b  --ignore-leading-blanks: 忽略前面的空格
+-t  --field-separator: 分隔符，默认TAB
 
