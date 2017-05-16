@@ -49,8 +49,28 @@ grep的主要参数：
 -v 参数： 请查看帮助了解
 
 3. sort
+
 参数：
+
 -n  --numeric-sort : 按照纯数字的方式来排序
+
 -b  --ignore-leading-blanks: 忽略前面的空格
+
 -t  --field-separator: 分隔符，默认TAB
+
+-k  --key: 排序的键的位置
+
+对 /etc/passwd 中的数据按照 uId的升序排列
+> cat /etc/passwd | sort -n -t ':' -k 3
+
+说明： -k 3 ： 按照第三列来排序，第三列是uId
+
+
+
+
+
+
+
+
+
 
