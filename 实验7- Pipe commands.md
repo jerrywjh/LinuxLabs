@@ -5,8 +5,11 @@
 
 1. cut 
 cut的几个主要参数：
+
 -d  --delimiter: 分隔符
+
 -f  --fields  字段／列
+
 -c  --characters  字符
 
 列出系统中所有的用户名
