@@ -1,8 +1,10 @@
 
-#实验8  Shell script programming
-##实验目的
+# 实验8  Shell script programming
+## 实验目的
+
 学会书写和阅读Shell script， 能用script来管理任务和查看信息
-##实验内容
+## 实验内容
+
 写一个Script程序，有一个主菜单，主菜单上有5个条目，分别是
 1. Operating System Information  
 2. Get My IP Address
