@@ -6,5 +6,5 @@ NOTE: These docs are written in Chinese and intended to be used for my classes.
 ## 实验环境：
 - 虚拟机软件： VMWare
 - Linux环境： RedHat Linux 5.0 
-- Root用户：   用户名：root   密码：student
+- Root用户：   用户名：root   密码：computer
 - Shell环境：  Bash
