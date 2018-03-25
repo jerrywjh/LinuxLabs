@@ -8,14 +8,17 @@
 > id
 3. 为系统新建一个用户 abc, 并设置密码
 > useradd abc
+
 > passwd abc
 
-4. 切换到root用户
+4. 切换到新建的abc用户， 然后再切换回root用户
+> su abc
+
 > su -
 
 思考: ```su -``` 和 ```su``` 有何不同？
 
-5. 在/usr中创建一个文件夹, 名字为 test.  
+5. 在root用户的情况下，在/usr中创建一个文件夹, 名字为 test. 
 > mkdir test
 
 > ls -l 
