@@ -14,7 +14,7 @@
 注意：对于静态网站，这一步不是必须的, 还有：不同的版本安装包和命令会略有不同，准确的命令请到产品各自的官网查看。
 
 安装Mysql数据库。 CentOS7以后已经把MySql数据库切换到MariaDB了， 所有不同版本的Linux，用的命令有所不同
-> yum install mariadb 或者  yum install mysql    
+> yum install mariadb 或者  yum install mysql-server    
 
 安装PHP，以及和MySql的接口
 > yum install php php-mysql
