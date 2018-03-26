@@ -31,7 +31,7 @@
 
 exit就是退出前面用 su -命令登录的root用户，你可以系统的提示符已经改变了
 
-7. 用abc用户的身份来编辑 /usr/test/myfile
+8. 用abc用户的身份来编辑 /usr/test/myfile
 > vim /usr/test/myfile
 
 编辑后能正常保存么？ 为什么？
