@@ -68,7 +68,7 @@
 思考： 如何能快速把aaa的首页复制到bbb的目录下，并做相应的修改？
 
 
-10. 配置 Apache
+7. 配置 Apache
 
 > vi /etc/httpd/conf/httpd.conf
 
@@ -91,4 +91,18 @@
 </VirtualHost>
 </pre>
 
-5. 配置虚拟主机
+8. 重启Apache
+命令如下：不同的Linux和Apache版本不太一样
+> apachectl restart
+
+or
+> /etc/init.d/httpd restart
+
+or 
+> systemctl restart httpd
+
+
+9. 在浏览器网页端浏览 aaa.com 和 bbb.com，看看是否能正常显示你的网页
+
+
+
