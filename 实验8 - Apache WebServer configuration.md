@@ -62,14 +62,14 @@
 > vi /var/www/aaa.com/public_html/index.html
 
 输入：
-<html>
-  <head>
-    <title>欢迎来到aaa.com!</title>
-  </head>
-  <body>
-    <h1>Success! aaa.com 的首页</h1>
-  </body>
-</html>
+> <html>
+>  <head>
+>    <title>欢迎来到aaa.com!</title>
+>  </head>
+>  <body>
+>    <h1>Success! aaa.com 的首页</h1>
+>  </body>
+> </html>
 
 创建个类似的页面到 /var/www/bbb.com/public_html/index.html
 思考： 如何能快速把aaa的首页复制到bbb的目录下，并做相应的修改？
