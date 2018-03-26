@@ -114,3 +114,17 @@ rm: (Remove)删除文件
 
 **说明**：以上这些命令都是Linux中最常用的命令，务必需要掌握。各种命令中的参数，不需要全部记住，用到的时候通过查看帮助来选择正确的参数。
 
+9. **more/less命令**
+more 和 less 命令可以用上下翻页的方式来查看文件。比如一个文件的内容比较长，用cat命令会一下子显示到最后一页，而用more或者less命令就可以一屏一屏的显示。
+比如要查看/etc/passwd的内容，可以用以下任何一种命令：
+> more /etc/passwd
+
+> less /etc/passwd
+
+> cat /etc/passwd | more
+
+> cat /etc/passed | less
+
+10. **head/tail命令**
+
+
