@@ -33,6 +33,13 @@
 
 > systemctl status httpd   查看Apache目前状态
 
+4. 为网站创建目录结构
+
+假设你准备在这台服务器上建立两个网站，名字分别是aaa.com和bbb.com
+
+> mkdir -p /var/www/aaa.com/public_html
+
+> mkdir -p /var/www/bbb.com/public_html
 
 4. 配置 Apache
 
