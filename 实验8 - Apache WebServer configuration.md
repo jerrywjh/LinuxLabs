@@ -41,6 +41,42 @@
 
 > mkdir -p /var/www/bbb.com/public_html
 
+确保web目录对所有人是可读的
+>  chmod -R 755 /var/www
+
+5.  修改hosts文件来模拟，使得aaa.com和bbb.com都指向本服务器
+
+> vi /etc/hosts 
+
+在hosts文件中加上如下两行：
+> 127.0.0.1  aaa.com
+
+> 127.0.0.1  bbb.com
+
+保存并退出后，用ping aaa.com来验证是否aaa.com已经指向本机。
+
+> ping aaa.com
+
+6. 为网站创建首页
+
+> vi /var/www/aaa.com/public_html/index.html
+
+输入：
+<pre>
+<html>
+  <head>
+    <title>欢迎来到aaa.com!</title>
+  </head>
+  <body>
+    <h1>Success! aaa.com 的首页</h1>
+  </body>
+</html>
+
+创建个类似的页面到 /var/www/bbb.com/public_html/index.html
+思考： 如何能快速把aaa的首页复制到bbb的目录下，并做相应的修改？
+
+
+</pre>
 4. 配置 Apache
 
 5. 配置虚拟主机
