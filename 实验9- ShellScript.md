@@ -1,5 +1,5 @@
 
-# 实验8  Shell script programming
+# 实验9  Shell script programming
 ## 实验目的
 
 学会书写和阅读Shell script， 能用script来管理任务和查看信息
