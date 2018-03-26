@@ -68,6 +68,20 @@
 思考： 如何能快速把aaa的首页复制到bbb的目录下，并做相应的修改？
 
 
-4. 配置 Apache
+10. 配置 Apache
+
+> vi /etc/httpd/conf/httpd.conf
+
+首先仔细阅读这个文件，了解各个项目的意义。
+然后在文件后部插入如下代码：
+<pre>
+<VirtualHost *:80>
+    ServerName www.aaa.com
+    ServerAlias aaa.com
+    DocumentRoot /var/www/aaa.com/public_html
+    ErrorLog /var/www/aaa.com/error.log
+    CustomLog /var/www/aaa.com/requests.log combined
+</VirtualHost>
+</pre>
 
 5. 配置虚拟主机
