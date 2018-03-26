@@ -62,7 +62,6 @@
 > vi /var/www/aaa.com/public_html/index.html
 
 输入：
-<pre>
 <html>
   <head>
     <title>欢迎来到aaa.com!</title>
@@ -76,7 +75,6 @@
 思考： 如何能快速把aaa的首页复制到bbb的目录下，并做相应的修改？
 
 
-</pre>
 4. 配置 Apache
 
 5. 配置虚拟主机
