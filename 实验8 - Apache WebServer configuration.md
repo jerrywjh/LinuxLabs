@@ -82,6 +82,13 @@
     ErrorLog /var/www/aaa.com/error.log
     CustomLog /var/www/aaa.com/requests.log combined
 </VirtualHost>
+<VirtualHost *:80>
+    ServerName www.bbb.com
+    ServerAlias bbb.com
+    DocumentRoot /var/www/bbb.com/public_html
+    ErrorLog /var/www/bbb.com/error.log
+    CustomLog /var/www/bbb.com/requests.log combined
+</VirtualHost>
 </pre>
 
 5. 配置虚拟主机
