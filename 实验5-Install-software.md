@@ -60,7 +60,7 @@ Nginx是目前最广泛使用的web服务器， 具体介绍请参考：https://
 
 如果 yum 找不到pcre-devel库或其他相关的库，需要先为yum 增加 EPEL的repository。
 
-> wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm 
+> wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm 
 
 > wget http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
 
